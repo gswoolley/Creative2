@@ -1,0 +1,55 @@
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url('./background.jpg');
+  font-size: 25px;
+}
+
+button {
+    display: inline-block;
+    height: 280px;
+    padding: 0;
+    margin: 0;
+    vertical-align: top;
+    width: 280px;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+
+button:hover{
+
+}
+
+#getData img {
+    display: block;
+    height: 303px;
+    width: 300px;
+}
+
+.speech-bubble{
+  background: #00704A;
+  color: #fff;
+  padding: 0.5em 1em;
+  position: relative;
+  border-radius: 0 0.25em 0.25em 0.25em;
+  box-shadow: 7px 30px 40px #664400;
+  transition: 0.5s;
+  animation: speech .7s linear 1;
+}
+
+.speech-bubble::after {
+  content: '';
+  position: absolute;
+  border: 0.5em solid transparent;
+  border-top-color: #00704A;
+  border-right-color: #00704A;
+  right: 100%;
+  top: 0%;
+  transform: skewY(20deg);
+  transform-origin: 100% 100%;
+}
